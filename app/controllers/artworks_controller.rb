@@ -24,20 +24,6 @@ class ArtworksController < ApplicationController
     end
   end
 
-  # PATCH/PUT /artworks/1
-  def update
-    if @artwork.update(artwork_params)
-      render json: @artwork
-    else
-      render json: @artwork.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /artworks/1
-  def destroy
-    @artwork.destroy
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_artwork
