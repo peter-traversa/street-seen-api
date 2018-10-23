@@ -1,4 +1,4 @@
-class ArtworksController < ApplicationController
+class Api::V1::ArtworksController < ApplicationController
   before_action :set_artwork, only: [:show, :update, :destroy]
 
   # GET /artworks

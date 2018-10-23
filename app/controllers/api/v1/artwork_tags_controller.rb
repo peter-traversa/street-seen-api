@@ -1,4 +1,4 @@
-class ArtworkTagsController < ApplicationController
+class Api::V1::ArtworkTagsController < ApplicationController
   before_action :set_tag, only: [:show]
 
   def index
