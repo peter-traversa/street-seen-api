@@ -1,4 +1,5 @@
 class Api::V1::ArtworkTagsController < ApplicationController
+  skip_before_action :authorized, only: [:index]
   before_action :set_tag, only: [:show]
 
   def index
