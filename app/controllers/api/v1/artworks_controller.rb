@@ -1,5 +1,5 @@
 class Api::V1::ArtworksController < ApplicationController
-  skip_before_action :authorized, only: [:index, :show]
+  skip_before_action :authorized
   before_action :set_artwork, only: [:show, :update, :destroy]
 
   # GET /artworks
@@ -17,9 +17,9 @@ class Api::V1::ArtworksController < ApplicationController
   # POST /artworks
   def create
     @artwork = Artwork.new(artwork_params)
-
+    
     if @artwork.save
-      render json: @artwork, status: :created, location: @artwork
+      render json: @artwork, status: :created
     else
       render json: @artwork.errors, status: :unprocessable_entity
     end
@@ -33,6 +33,6 @@ class Api::V1::ArtworksController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def artwork_params
-      params.require(:artwork).permit(:nickname, :user_id, :latitude, :longitude, :img_url)
+      params.permit(:nickname, :user_id, :latitude, :longitude, :img_url, :tags)
     end
 end

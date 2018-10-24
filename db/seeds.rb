@@ -69,7 +69,7 @@ a46 = Artwork.create(nickname: 'Books Are Magic', user: u4, latitude: 40.6838888
 a47 = Artwork.create(nickname: 'Kinky Hand Sticker', user: u5, latitude: 40.72916667, longitude: -73.99194444, img_url: 'https://s3.us-east-2.amazonaws.com/street-seen/Kinky+Hand+Sticker.jpg', tags: [t7, t10])
 a48 = Artwork.create(nickname: 'Technicolor Watertower', user: u5, latitude: 40.70444444, longitude: -73.98666667, img_url: 'https://s3.us-east-2.amazonaws.com/street-seen/Technicolor+Watertower+from+BQE.jpg', tags: [t1, t6, t10])
 a49 = Artwork.create(nickname: 'Stacked Raccoons', user: u1, latitude: 40.71638889, longitude: -73.95277778, img_url: 'https://s3.us-east-2.amazonaws.com/street-seen/StackedRacoons.jpg', tags: [t2, t3, t6])
-a50 = Artwork.create(nickname: 'My Pussy', user: u6, latitude: 37.976822, longitude: 23.729493, img_url: 'https://s3.us-east-2.amazonaws.com/street-seen/MyPussy_Athens.jpg', tags: [t2, t3, t6, t11])
+a50 = Artwork.create(nickname: 'Gates to the Wall', user: u7, latitude: 54.601584, longitude: -5.961346, img_url: 'https://s3.us-east-2.amazonaws.com/street-seen/Belfast/GatesToTheWall.jpg', tags: [t3, t10, t11])
 a51 = Artwork.create(nickname: 'Searching for Inner Peace', user: u6, latitude: 37.976755, longitude: 23.729538, img_url: 'https://s3.us-east-2.amazonaws.com/street-seen/SearchingForInnerPeace_Athens.jpg', tags: [t2, t3])
 a52 = Artwork.create(nickname: 'Snarling Girl', user: u6, latitude: 37.976701, longitude: 23.731334, img_url: 'https://s3.us-east-2.amazonaws.com/street-seen/SnarlingGirl_Athens.jpg', tags: [t2, t3, t6])
 a53 = Artwork.create(nickname: 'Face Off', user: u6, latitude: 37.976454, longitude: 23.733391, img_url: 'https://s3.us-east-2.amazonaws.com/street-seen/FaceOff_Athens.jpg', tags: [t2, t3, t10])
@@ -98,7 +98,7 @@ a75 = Artwork.create(nickname: 'Bring Down the Walls', user: u7, latitude: 54.60
 a76 = Artwork.create(nickname: 'Faces', user: u7, latitude: 54.599983, longitude: -5.946633, img_url: 'https://s3.us-east-2.amazonaws.com/street-seen/Belfast/Faces.jpg', tags: [t3, t10, t11])
 a77 = Artwork.create(nickname: 'Wanted', user: u7, latitude: 54.599728, longitude: -5.946386, img_url: 'https://s3.us-east-2.amazonaws.com/street-seen/Belfast/Wanted.jpg', tags: [t3, t10, t11])
 a78 = Artwork.create(nickname: "There's More in Common", user: u7, latitude: 54.600295, longitude: -5.949651, img_url: 'https://s3.us-east-2.amazonaws.com/street-seen/Belfast/TheresMoreInCommon.jpg', tags: [t3, t10, t11])
-a79 = Artwork.create(nickname: 'Gates to the Wall', user: u7, latitude: 54.601584, longitude: -5.961346, img_url: 'https://s3.us-east-2.amazonaws.com/street-seen/Belfast/GatesToTheWall.jpg', tags: [t3, t10, t11])
+a79 = Artwork.create(nickname: 'My Pussy', user: u6, latitude: 37.976822, longitude: 23.729493, img_url: 'https://s3.us-east-2.amazonaws.com/street-seen/MyPussy_Athens.jpg', tags: [t2, t3, t6, t11])
 
 # ArtworkTag.create(artwork: a1, tag: t2)
 # ArtworkTag.create(artwork: a1, tag: t3)

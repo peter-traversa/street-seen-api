@@ -1,5 +1,5 @@
 class Api::V1::ArtworkTagsController < ApplicationController
-  skip_before_action :authorized, only: [:index]
+  skip_before_action :authorized, only: [:index, :create]
   before_action :set_tag, only: [:show]
 
   def index
@@ -12,7 +12,7 @@ class Api::V1::ArtworkTagsController < ApplicationController
     @artwork_tag = ArtworkTag.new(artwork_tag_params)
 
     if @artwork_tag.save
-      render json: @artwork_tag, status: :created, location: @artwork_tag
+      render json: @artwork_tag, status: :created
     else
       render json: @artwork_tag.errors, status: :unprocessable_entity
     end
