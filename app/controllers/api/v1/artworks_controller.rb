@@ -1,5 +1,5 @@
 class Api::V1::ArtworksController < ApplicationController
-  skip_before_action :authorized, only: [:index, :show]
+  skip_before_action :authorized, only: [:index, :show, :create]
   before_action :set_artwork, only: [:show, :update, :destroy]
 
   # GET /artworks
@@ -19,7 +19,7 @@ class Api::V1::ArtworksController < ApplicationController
     @artwork = Artwork.new(artwork_params)
 
     if @artwork.save
-      render json: @artwork, status: :created, location: @artwork
+      render json: @artwork, status: :created
     else
       render json: @artwork.errors, status: :unprocessable_entity
     end
